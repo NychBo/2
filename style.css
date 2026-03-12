@@ -3,26 +3,11 @@ body{
 margin:0;
 background:#000;
 color:#eee;
-
 font-family:"Libre Baskerville",serif;
-
 text-align:center;
 
-scroll-behavior:smooth;
-
 }
-.about{
 
-max-width:700px;
-margin:auto;
-
-padding:40px 20px;
-
-line-height:1.8;
-
-font-size:18px;
-
-}
 
 
 .hero{
@@ -71,7 +56,7 @@ color:#bbb;
 
 margin-top:20px;
 
-padding:14px 26px;
+padding:14px 28px;
 
 background:linear-gradient(135deg,#f6e27a,#d4af37);
 
@@ -83,9 +68,23 @@ text-decoration:none;
 
 font-family:"Cinzel",serif;
 
+font-weight:bold;
+
 }
 
 
+
+.about{
+
+max-width:700px;
+margin:auto;
+
+padding:40px 20px;
+
+line-height:1.8;
+font-size:18px;
+
+}
 
 
 
@@ -106,15 +105,10 @@ padding:20px;
 .gallery img{
 
 width:100%;
+
 border-radius:12px;
 
-}
-
-
-
-.prices li{
-
-margin:10px 0;
+cursor:pointer;
 
 }
 
@@ -159,5 +153,52 @@ border-radius:12px;
 color:#d4af37;
 
 text-decoration:none;
+
+}
+
+
+
+#viewer{
+
+display:none;
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,.95);
+
+align-items:center;
+justify-content:center;
+
+}
+
+
+
+#viewer img{
+
+max-width:90%;
+max-height:90%;
+
+}
+
+
+
+.close{
+
+position:absolute;
+
+top:30px;
+right:30px;
+
+font-size:30px;
+
+color:white;
+
+cursor:pointer;
 
 }
